@@ -1,0 +1,11 @@
+name: IS2pondPicking
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - matplotlib
+  - pandas
+  - json
+  - requests
+  - os
+  - IPython
