@@ -3,6 +3,7 @@ class PondPicker:
         'get pond data and initialize plot'
         
         # get pond data from Open Altimetry
+        import numpy as np
         import matplotlib.pylab as plt
         import json
         import requests
@@ -98,19 +99,19 @@ class PondPicker:
                 self.sline.set_data(self.xs, self.ys)
                 self.sline.figure.canvas.draw()
             elif self.lastkey == '2':
-                del self.xb1[-1]
-                del self.yb1[-1]
+                del self.xb[-1]
+                del self.yb[-1]
                 self.bline.set_data(self.xb, self.yb)
                 self.bline.figure.canvas.draw()
         elif event.key == 'n':
             if self.lastkey == '1':
-                self.xs.append(np.nan)
-                self.ys.append(np.nan)
+                self.xs.append('nan')
+                self.ys.append('nan')
                 self.sline.set_data(self.xs, self.ys)
                 self.sline.figure.canvas.draw()
             elif self.lastkey == '2':
-                self.xb.append(np.nan)
-                self.yb.append(np.nan)
+                self.xb.append('nan')
+                self.yb.append('nan')
                 self.bline.set_data(self.xb, self.yb)
                 self.bline.figure.canvas.draw()
         else:
@@ -141,6 +142,7 @@ def getDataDownload(pond1,pond2,pond3,pond4,YOUR_NAME):
     import pandas as pd
     import os
     import matplotlib.pylab as plt
+    import numpy as np
     
     lat = np.array([])
     h = np.array([])
@@ -153,8 +155,8 @@ def getDataDownload(pond1,pond2,pond3,pond4,YOUR_NAME):
         for itype,s in enumerate([s1, s2]):
             lat = np.append(lat,s[0])
             h = np.append(h,s[1])
-            pondid = np.append(pondid,np.ones_like(s[0])*(ipond+1))
-            typeid = np.append(typeid,np.ones_like(s[0])*(itype+1))
+            pondid = np.append(pondid,np.ones((len(s[0]),1))*(ipond+1))
+            typeid = np.append(typeid,np.ones((len(s[0]),1))*(itype+1))
     
     df = pd.DataFrame({'lat': lat, 'h': h, 'pondid': pondid, 'typeid': typeid})
     df = df.astype({'lat': float, 'h': float, 'pondid': int, 'typeid': int})
