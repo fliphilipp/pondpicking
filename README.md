@@ -23,9 +23,8 @@ All you need to do is run the cells in this notebook in sequence, and trace out 
 </tr></table>
 
 
-To start running the notebook, launch it in Binder by clicking the logo at the very top, or go to the link below.
+To start running the notebook, launch it in Binder by clicking the logo, or go to the link below.
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/fliphilipp/pondpicking/master?filepath=manualPondPicking.ipynb)
 
 https://mybinder.org/v2/gh/fliphilipp/pondpicking/master?filepath=manualPondPicking.ipynb
-
-
