@@ -4,7 +4,6 @@ class PondPicker:
         
         # get pond data from Open Altimetry
         import matplotlib.pylab as plt
-        import numpy as np
         import json
         import requests
         self.pond = pond
@@ -140,7 +139,6 @@ class PondPicker:
 def getDataDownload(pond1,pond2,pond3,pond4,YOUR_NAME):
     
     import pandas as pd
-    import numpy as np
     import os
     import matplotlib.pylab as plt
     
