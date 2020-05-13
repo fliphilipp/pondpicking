@@ -1,6 +1,7 @@
 name: IS2pondPicking
 channels:
   - conda-forge
+  - jmcmurray
 dependencies:
   - numpy
   - matplotlib
