@@ -20,10 +20,11 @@ All you need to do is run the cells in this notebook in sequence, and trace out 
 <table><tr>
 <td> <img src="imgs/pondPickingExample.png" alt="an example of picked surfaces" style="height: 350px;"/> </td>
 <td> <img src="imgs/pondPickingCheckExample.png" alt="an example of all picked surfaces when checking the data" style="height: 350px;"/>  </td>
-</table>
+</tr></table>
 
 
 To start running the notebook, launch it in Binder by clicking the logo at the very top, or go to the link below.
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/fliphilipp/pondpicking/master?filepath=manualPondPicking.ipynb)
 
 https://mybinder.org/v2/gh/fliphilipp/pondpicking/master?filepath=manualPondPicking.ipynb
 
