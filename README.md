@@ -22,9 +22,7 @@ All you need to do is run the cells in this notebook in sequence, and trace out 
 <td> <img src="imgs/pondPickingCheckExample.png" alt="an example of all picked surfaces when checking the data" style="height: 350px;"/>  </td>
 </tr></table>
 
-
-To start running the notebook, launch it in Binder by clicking the logo, or go to the link below.
-
+To start running the notebook, launch it in Binder by clicking the logo, or go to the link below.<br/>
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/fliphilipp/pondpicking/master?filepath=manualPondPicking.ipynb)
 
 https://mybinder.org/v2/gh/fliphilipp/pondpicking/master?filepath=manualPondPicking.ipynb
