@@ -26,3 +26,6 @@ To start running the notebook, launch it in Binder by clicking the logo, or go t
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/fliphilipp/pondpicking/master?filepath=manualPondPicking.ipynb)
 
 https://mybinder.org/v2/gh/fliphilipp/pondpicking/master?filepath=manualPondPicking.ipynb
+
+***NOTE:*** *Sometimes there seems to be a second, flat return surface just about half a metre below the pond surface (see below). This is due to oversaturation and dead-time of the sensor. Such second returns are not an actual surface, and should be IGNORED!*
+<img src="imgs/ex3.png" alt="examples of a second return due to sensor oversaturation and dead-time" width="300"/>
